@@ -5,7 +5,6 @@ export const useCart = () => {
 
     const { cartItems, setCartItems } = useContext(AppContext);
     const [totalPrice, setTotalPrice] = useState(0);
-
     const [isBagOpen, setIsBagOpen] = useState(false);
 
     useEffect(() => {

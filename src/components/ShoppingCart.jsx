@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export const ShoppingCart = () => {
 
-    const { cartItems, clearCart, totalPrice, isBagOpen } = useCart();
-
+    const { cartItems, clearCart, totalPrice } = useCart();
     const navigate = useNavigate();
 
     const handleCheckout = () => {
