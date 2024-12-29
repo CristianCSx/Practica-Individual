@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-items: center;
+    background-color: white;
+}
+
+.bookdetails-main-container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .bookdetails-left-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+
+        .backButton {
+            position: absolute;
+            color: rgb(37, 37, 37);
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            margin-top: 70px;
+            margin-left: 30px;
+            top: 50px;
+            left: 20px;
+        }
+        
+        .backButton:hover {
+            cursor: pointer;
+        }
+        
+
+        .bookdetails-img-container{
+            height: 400px;
+            margin-right: 20px;
+            img {
+                width: 250px;
+                height: 400px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            
+        }
+
+        .bookdetails-info-container {
+            margin-top: 20px;
+            .bookdetails-name {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .bookdetails-author {
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: 5px;
+            }
+
+            .bookdetails-description {
+                margin-top: 20px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .bookdetails-right-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        .bookdetails-buy-info-container {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 300px;
+            height: min-content;
+            margin-right: 80px;
+            margin-left: 80px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .bookdetails-price {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            button {
+                height: 50px;
+                width: 200px;
+                margin-top: 20px;
+                background-color: rgba(13, 31, 45, 1);
+                border: none;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: rgb(32, 57, 76);
+            }
+
+            #buynow {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.bookdetailts-footer-container {
+    margin-top: auto;
+}

@@ -1,0 +1,309 @@
+.empty-main-container {
+    width: 100%;
+
+    h1, p {
+        margin-left: 30px;
+    }
+}
+
+.full-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkout-container {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    .checkout-title {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .data-container {
+        background-color: rgb(221, 221, 221);
+        width: 55%;
+        padding: 20px 70px;
+
+        .backButton {
+            color: rgb(37, 37, 37);
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            margin-left: -50px;
+        }
+
+        .backButton:hover {
+            cursor: pointer;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            h2 {
+                font-weight: 500;
+            }
+        }
+
+        .email-section {
+            .email-input {
+                width: 100%;
+                height: 30px;
+                border: none;
+                border-radius: 7px;
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+
+            .checkbox-container {
+                margin-top: 10px;
+                display:flex;
+                flex-direction: row;
+
+                input[type="checkbox"] {
+                    margin-right: 10px;
+                }
+
+                input[type="checkbox"]:hover {
+                    cursor: pointer;
+                }
+
+                .checkbox-text {
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.594);
+                }
+
+                .checkbox-text:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .checkbox-container:hover {
+                cursor: pointer;
+            }
+        }
+
+        .address-section {
+            .country {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                .country-selector {
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    border-radius: 7px;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    margin-top: 10px;
+                }
+
+                .country-selector:focus {
+                    outline: none;
+                }
+            }
+
+            .address-wrapper {
+                display: flex;
+                flex-direction: column;
+                .input-container {
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        border: none;
+                        border-radius: 7px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        margin-top: 15px;
+                    }
+                }
+
+                .inner-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .input-container {
+                        width: 32%;
+
+                    }
+
+                    .input-container:nth-child(3) {
+                        select {
+                            width: 100%;
+                            height: 40px;
+                            border: none;
+                            border-radius: 7px;
+                            padding: 5px;
+                            border: 1px solid #ccc;
+                            margin-top: 15px;
+                        }
+
+                        select:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .phone input{
+                width: 100%;
+                height: 40px;
+                border: none;
+                border-radius: 7px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                margin-top: 15px;
+            }
+        }
+
+        .payment-section {
+
+            .payment-method {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+
+            .payment-method:last-child {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    .summary-container {
+        width: 45%;
+        padding: 50px;
+    }
+
+    .discount-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 2px solid #ddd;
+        margin-top: 30px;
+        padding-bottom: 30px;
+
+        .discount-input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 7px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .discount-button {
+            background-color: rgba(13, 31, 45, 1);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .discount-button:hover {
+            background-color: rgba(13, 31, 45, 0.9);
+        }
+    }
+}
+
+.checkout-list {
+    list-style: none;
+    padding: 0;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+
+    .img-checkout-container {
+        width: 50px;
+        height: 70px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .checkout-item-details {
+        flex: 1;
+        margin-left: 10px;
+    
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .author {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.594);
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .price{
+        font-weight: bold;
+        color: rgb(73, 73, 73);
+    }
+
+
+}
+
+.checkout-item:last-child {
+    border-bottom: 2px solid #ddd;
+}
+
+
+.checkout-summary {
+    margin-top: 20px;
+    text-align: right;
+    color: rgb(42, 42, 42);
+}
+
+.checkout-button {
+    background-color: rgba(13, 31, 45, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkout-button:hover {
+    background-color: rgba(13, 31, 45, 0.9);
+}
+
+input:focus {
+    outline: none;
+}

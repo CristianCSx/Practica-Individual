@@ -1,0 +1,18 @@
+h1 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.backButton {
+    color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.backButton:hover {
+    cursor: pointer;
+}

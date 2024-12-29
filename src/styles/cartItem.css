@@ -1,0 +1,44 @@
+.cartitem-container {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 10px;
+
+    .cartitem-info-container {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0 10px;
+
+
+        .cartitem-count {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            
+            .count-number {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 0 10px;
+            }
+
+            .count-button {
+                height: 20px;
+                width: 20px;
+                border-radius: 5px;
+                margin: 0;
+                background-color: rgba(13, 31, 45, 1);
+                color: white;
+            }
+        }
+    }
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    height: 2px;
+    margin: 15px 0;
+}

@@ -1,0 +1,112 @@
+.bookcard-container {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: min-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.bookcard-inner-container {
+    margin: 15px 25px;
+    position: relative;
+}
+
+.bookimg-container {
+    display: block;
+    justify-content: center;
+    margin-bottom: 0;
+    height: min-content;
+    width: 200px;
+    position: relative;
+}
+
+.bookcard-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bookimg-container:hover .bookcard-button-container {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+.bookcard-button {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgba(13, 31, 45, 1);
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.bookcard-button:hover {
+    cursor: pointer;
+    background-color: rgb(233, 233, 233);
+}
+
+.bookimg {
+    height: 300px;
+    width: 100%;
+}
+
+.bookcard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.bookname {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: block;
+}
+
+.authorname {
+    margin-top: 10px;
+}
+
+.bookprice {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.bookcard-inner-info {
+    margin-top: 10px;
+}
+
+.bookrating {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .bookimg {
+        height: 250px;
+        width: 100%;
+    }
+
+    .bookimg-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        height: min-content;
+        width: 170px;
+    }
+}

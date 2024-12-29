@@ -1,0 +1,28 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0D1F2D;
+    height: 100px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: underline;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
