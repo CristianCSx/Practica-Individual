@@ -11,7 +11,7 @@ export const CartItem = ({item}) => {
         <>
             <div className="cartitem-container">
                 <div className="cartitem-img-container">
-                    <img src={item.img} alt={item.name} style={{ width: "50px" }} />
+                    <img src={item.img} alt={item.name} />
                 </div>
                 <div className="cartitem-info-container">
                     <p>{item.name}</p>
@@ -26,6 +26,5 @@ export const CartItem = ({item}) => {
             </div>
             <hr />
         </>
-
     )
 };

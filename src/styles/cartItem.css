@@ -4,6 +4,11 @@
 
     margin-bottom: 10px;
 
+    .cartitem-img-container {
+        img {
+            width: 50px;
+        }
+    }
     .cartitem-info-container {
         margin-left: 10px;
         display: flex;
