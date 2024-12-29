@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../styles/NavBar.css";
+import "../styles/navbar.css";
 import logo from "../images/RelatosDePapelLogo.png";
 import { ShoppingCart } from "../components/ShoppingCart";
 import { useCart } from "../hooks/useCart";
